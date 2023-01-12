@@ -1,0 +1,21 @@
+Version: 1.0
+
+RestoreWorkspace: Yes
+SaveWorkspace: Yes
+AlwaysSaveHistory: Yes
+
+EnableCodeIndexing: Yes
+UseSpacesForTab: Yes
+NumSpacesForTab: 2
+Encoding: UTF-8
+
+RnwWeave: Sweave
+LaTeX: pdfLaTeX
+
+QuitChildProcessesOnExit: Yes
+
+PythonType: system
+PythonVersion: 3.9.0
+PythonPath: C:\Users\User\AppData\Local\Programs\Python\Python39\python.exe
+
+SpellingDictionary: en_GB

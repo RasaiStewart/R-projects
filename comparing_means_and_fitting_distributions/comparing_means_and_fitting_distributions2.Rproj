@@ -1,0 +1,54 @@
+# Import relevant modules.
+library(dplyr)
+library(tidyverse)
+
+# Import, rename and load hsbraw dataset, study of the numbers
+# of students studying stem subjects (Maths, Technology,
+# Engineering and Science), from the internet
+# into memory.
+dat_csv<-
+  read.csv("https://stats.idre.ucla.edu/stat/data/hsbraw.csv")
+
+# Display the full hsbraw dataset.
+View(dat_csv)
+
+# Print first and last 3 columns in the hsbraw dataset
+# respectively.
+
+head(dat_csv)
+tail(dat_csv)
+
+typeof(dat_csv)
+
+# Extract the 3rd, 10 and 30th rows of the variable science
+# respectively in dat_csv using the $ operator.
+# 3rd row
+dat_csv$science[3]
+
+# 10th row
+dat_csv$science[10]
+
+# 30th row
+dat_csv$science[30]
+
+
+# Create a summary of the dat_csv variable.
+summary(dat_csv$female)
+
+test <- replicate(list(dat_csv$science))
+
+#dat_csv %>%
+#  count(female)
+test %<%
+  list(x=maths, a=read, b=write)
+#  data.frame(dat_csv$math)
+#  data.frame(dat_csv$read)
+#  data.frame(dat_csv$write)
+test
+
+test <- setNames(test = math, read, write)
+#test <- dat_csv$math
+#test <- dat_csv$math
+#test <- dat_csv$read
+#test <- dat_csv$write
+test
